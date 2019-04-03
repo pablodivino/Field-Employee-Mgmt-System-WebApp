@@ -1,0 +1,686 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font-family:Roboto;
+	min-width: 670px;
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+body::-webkit-scrollbar{
+			width: 7px;
+			height:7px;
+		background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb{
+	background-color: #0ae;
+	
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+}
+
+#Content{
+	width:100%;
+}
+
+#ChangePasswordDialog{
+	background-color:#fbfbfb;
+	z-index:4;
+	position:fixed;
+	left:200px;
+	width:350px;
+	height:290px;
+	top:218px;
+	padding:5px;
+	display:none;
+}
+
+#ChangePasswordDialog h1{
+	color:#51ccdb;
+	font-size:18px;
+	margin-top:8px;
+}
+
+#Message{
+margin-top:5px;
+color:#03c;	
+}
+
+#ChangePasswordDialog paper-input{
+	width:250px;
+	height:50px;
+	font-size:5px;
+}
+
+#ChangePasswordDialog paper-fab{
+	width:40px;
+	height:40px;
+	margin:5px;
+}
+
+.CPButtons{
+	margin:10px;
+	margin-top:20px;
+	display:inline-block;
+}
+
+/* Left Navigation Bar Styles */
+#LeftNavigationBar{
+	--paper-drawer-panel-left-drawer-container: background-color: #333;
+  
+	background-color:#333;	
+	height:100%;
+	width:200px;
+	position:fixed;
+	left:0px;
+	z-index:3;
+	
+}
+
+#logo{
+	height:120px;
+	margin: 25px 40px 25px 40px;
+}
+
+#LeftNavigationBar paper-menu{
+	background-color:#333;
+	color:#ddd;
+	margin-top:30px;
+}
+
+#LeftNavigationBar paper-menu iron-icon{
+	color:#ddd;
+	margin-right:5px;
+}
+
+#LeftNavigationBar paper-menu hr{
+	background-color:#555;
+	width:180px;
+	margin:10px;
+}
+
+#LogoBackground{
+	height:170px;
+	width:100%; 
+	background-image:url(../Images/Background_Logo.png);
+	background-size:cover;
+}
+
+#LeftNavigationBar paper-item{
+	cursor:pointer;
+}
+/* Left Navigation Bar Styles */
+
+/* Task Menu Styles */
+#TaskMenu{
+	background-color:#EEE;	
+	height:100%;
+	width:200px;
+	position:fixed;
+	right:0px;
+	z-index:2;
+}
+
+#TaskMenu p{
+	font-size:16px;
+	color:#999;
+	margin-top:30px;
+	margin-left:20px;
+	font-style:normal;
+}
+
+#TaskMenu paper-dropdown-menu{
+	width:160px;
+	margin:20px;
+	height:16px;
+	font-size:10px;
+}
+
+#FilterBy{
+	width:136px !important;
+	margin:20px;
+	margin-right:0px !important;
+	margin-bottom:0px !important;
+	height:16px;
+}
+
+#ClearFilter{
+	display:inline-block;
+	margin:0px !important;
+	width:30px;
+	height:30px;
+	padding:3px !important;
+	color:#900;
+}
+
+#TaskMenu .dropdown-content::-webkit-scrollbar{
+	width: 7px;
+	height:7px;
+	background-color: #eee;
+}
+#TaskMenu .dropdown-content::-webkit-scrollbar-thumb{
+	background-color: #666;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+		color-stop(.5, rgba(255, 255, 255, .2)),
+		color-stop(.5, transparent), to(transparent));
+}
+
+#TaskMenu paper-dropdown-menu paper-item{
+	font-size:14px;
+	height:18px;	
+}
+
+#TaskMenuContent{
+	margin-top:40px;
+}
+
+#DatePicker{
+	margin-top:40px;
+}
+
+.dropdown-content{
+	min-width:150px;
+}	
+	
+.MacGray {
+	width: 200px;
+	height: 100px;
+  /** Demo styles for mdCalendar. */ 
+}
+   
+md-content {
+	width:200px;
+	background-color:#EEE !important;
+}
+	
+md-datepicker{
+	width:200px;
+	padding:0px;
+	background-color:#EEE !important;
+}
+
+#FilterEmployeeMenu paper-menu{
+	width:200px;
+	margin-top:60px;
+	height:calc(100% - 230px) !important;
+	font-size:10px;
+	padding:0px;
+	overflow:auto;
+	background-color:#eee;
+}
+
+#FilterEmployeeMenu paper-menu paper-material{
+	font-size:13px;
+	height:40px;
+	line-height:13px;
+	background-color:#fafafa;
+	color:#666;
+	margin-top:4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:12px;
+	padding-left:20px;
+	cursor: pointer;
+	width: 170px;
+	border-radius: 1px;
+}
+#FilterEmployeeMenu paper-menu::-webkit-scrollbar{
+	width: 7px;
+	height:7px;
+	background-color: #eee;
+}
+#FilterEmployeeMenu paper-menu::-webkit-scrollbar-thumb{
+	background-color: #666;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+		color-stop(.5, rgba(255, 255, 255, .2)),
+		color-stop(.5, transparent), to(transparent));
+}
+#FilterEmployeeMenu paper-input{
+	width:160px;
+	margin:20px;
+	margin-top:0px;
+	height:16px;
+	font-size:10px;
+}
+
+#DateFilterButton{
+	height:30px;
+	width:160px;
+	font-size:12px;
+	margin-left:20px;
+	margin-top:20px;
+	background-color:#FFF;
+	color:#51ccdb;
+	font-weight:bold;
+}
+/* Task Menu Styles */
+
+/* Add Task Menu Styles*/
+#AddTaskMenu{
+	background-color:#EEE;	
+	height:100%;
+	width:200px;
+	position:fixed;
+	right:0px;
+	z-index:5;
+	display:none;
+	overflow:auto;
+}
+
+#AddTaskMenu p{
+	font-size:16px;
+	color:#999;
+	margin-top:30px;
+	margin-left:20px;
+	font-style:normal;
+}
+
+#AddTaskMenu paper-input{
+	width:160px;
+	margin:20px;
+	margin-top:0px;
+	height:16px;
+	font-size:10px;
+}
+
+#AddTaskMenu paper-textarea{
+	width:160px;
+	margin:20px;
+	margin-top:0px;
+	max-height:calc(100% - 200px) !important;
+	font-size:10px;
+}
+
+#Description textarea::-webkit-scrollbar{
+	width: 7px;
+	height:7px;
+	background-color: #eee;
+}
+#Description textarea::-webkit-scrollbar-thumb{
+	background-color: #666;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+		color-stop(.5, rgba(255, 255, 255, .2)),
+		color-stop(.5, transparent), to(transparent));
+}
+#AddTaskMenu paper-dropdown-menu{
+	width:160px;
+	margin-top:0px;
+	height:16px;
+	font-size:10px;
+	display:block;
+}
+
+#AddTaskMenu .dropdown-content::-webkit-scrollbar{
+	width: 7px;
+	height:7px;
+	background-color: #eee;
+}
+#AddTaskMenu .dropdown-content::-webkit-scrollbar-thumb{
+	background-color: #666;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+		color-stop(.5, rgba(255, 255, 255, .2)),
+		color-stop(.5, transparent), to(transparent));
+}
+
+#AddTaskMenu .dropdown-content{
+	max-width:160px;
+}
+#AddTaskMenu paper-dropdown-menu paper-item{
+	font-size:14px;
+	height:18px;
+}
+
+#AddTaskP1Details p{
+	font-size:14px;
+	color:#222;
+	margin-top: 0px;
+}
+
+#ConfirmButton{
+	height:30px;
+	width:120px;
+	font-size:12px;
+	margin-left:20px;
+	background-color:#FFF;
+	color:#51ccdb;
+	font-weight:bold;
+}
+
+#NextButton{
+	height:30px;
+	width:120px;
+	font-size:12px;
+	margin-left:20px;
+	background-color:#FFF;
+	color:#51ccdb;
+	font-weight:bold;
+}
+#CancelButton{
+	width:30px !important;
+	height:30px;
+	background-color:#900;
+	padding:0px;
+	min-width:0px !important;
+}
+#BackButton{
+	width:30px !important;
+	height:30px;
+	background-color:#900;
+	padding:0px;
+	min-width:0px !important;
+}
+
+#CancelButton iron-icon{
+	width:30px;
+	height: 30px;
+	color: #FFF;
+}
+#BackButton iron-icon{
+	width:30px;
+	height: 30px;
+	color: #FFF;
+}
+
+.buttons{
+	margin-top:80px;
+	float:left;
+}
+
+.addTaskDropdown{
+	margin-top:20px !important;
+}
+
+#AddTaskDatePicker{
+	margin-top:40px !important;
+}
+
+/* Add Task Menu Styles*/
+
+/* Employee Menu Styles */
+#EmployeeMenu{
+	background-color:#EEE;	
+	height:100%;
+	width:200px;
+	position:fixed;
+	right:0px;
+	z-index:2;
+	display:none;
+}
+	
+#EmployeeMenu p{
+	font-size:16px;
+	color:#999;
+	margin-top:30px;
+	margin-left:20px;
+	font-style:normal;
+}
+	
+#EmployeeMenu paper-menu{
+	width:200px;
+	margin-top:60px;
+	height:calc(100% - 200px) !important;
+	font-size:10px;
+	padding:0px;
+	overflow:auto;
+	background-color:#eee;
+}
+
+#EmployeeMenu paper-menu paper-material{
+	font-size:13px;
+	height:40px;
+	line-height:13px;
+	background-color:#fafafa;
+	color:#666;
+	margin-top:4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:12px;
+	padding-left:20px;
+	cursor: pointer;
+	width: 170px;
+	border-radius: 1px;
+}
+
+#EmployeeMenu paper-menu::-webkit-scrollbar{
+	width: 7px;
+	height:7px;
+	background-color: #eee;
+}
+
+#EmployeeMenu paper-menu::-webkit-scrollbar-thumb{
+	background-color: #666;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	color-stop(.5, rgba(255, 255, 255, .2)),
+	color-stop(.5, transparent), to(transparent));
+}
+	
+a{
+	text-decoration:none;
+	cursor:pointer;	
+}
+
+#EmployeeMenu paper-input{
+	width:160px;
+	margin:20px;
+	margin-top:0px;
+	height:16px;
+	font-size:10px;
+}
+
+#EmployeeMenu hr{
+	color:#555;
+	width:180px;
+	margin:10px;
+}
+
+#AddEmployeeButton{
+	height:40px;
+	width: 190px;
+	background-color:#fff;
+	color: #777;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+#EditContact{
+		width: 400px;
+		height: 400px;
+		position: fixed;
+		top: calc(50% - 200px);
+		right: calc(50% - 200px);
+		display: none;
+		background-color: #FFF;
+		z-index: 10;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#EditContact paper-input{
+		width: 300px;
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+	#Eemail{
+		width: 300px;
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+	.editButtons{
+		margin: 10px;
+		margin-top: 20px;
+		display: inline-block;
+	}
+	.editButtons paper-fab{
+		width: 40px;
+		height: 40px;
+		margin: 5px;
+	}
+	.editMsgs
+	{
+		position: fixed;
+		height: 20px;
+		color: #51ccdb;
+		padding: 10px;
+		top: 25px;
+		display: none;
+		background-color: #FFF;
+		z-index: 10; 
+		font-size: 14px;
+		text-align: center;
+		border-radius: 10px;
+	}
+
+/* Employee Menu Styles */
+
+/* Add Employee dialog */
+#AddEmployeeDialog{
+	display:none;
+	background-color:#fbfbfb;
+	z-index:4;
+	position:fixed;
+	padding:5px;
+	width:300px;
+	right:207px;
+	bottom:7px;
+}
+
+#AddEmployeeDialog h1{
+	color:#51ccdb;
+	font-size:18px;
+	margin-top:8px;
+}
+#AddEmployeeDialog paper-input{
+	width:250px;
+	height:50px;
+	margin:auto;
+}
+#AddEmployeeDialog gold-email-input{
+	width:250px;
+	height:50px;
+	margin:auto;
+}
+#AddEmployeeDialog paper-fab{
+	width:40px;
+	height:40px;
+	margin:5px;
+}
+
+#AddEmployeeDialog paper-dropdown-menu{
+	width:250px;
+	margin-left:25px;
+	margin-right:25px;
+	margin-bottom:30px;
+	height:16px;
+	font-size:10px;
+}
+/* Add Employee dialog */
+
+/* Add Customer Dialog Styles */
+#AddCustomerDialog{
+	display:none;
+	background-color:#fbfbfb;
+	z-index:4;
+	position:fixed;
+	padding:5px;
+	width:300px;
+	right:207px;
+	top:7px;
+}
+
+#AddCustomerDialog h1{
+	color:#51ccdb;
+	font-size:18px;
+	margin-top:8px;
+}
+#AddCustomerDialog paper-input{
+	width:250px;
+	height:50px;
+	margin:auto;
+}
+#AddCustomerDialog gold-email-input{
+	width:250px;
+	height:50px;
+	margin:auto;
+}
+#AddCustomerDialog paper-fab{
+	width:40px;
+	height:40px;
+	margin:5px;
+}
+/* Add Customer Dialog Styles */
+
+/* Maps Menu Styles */
+#MapsMenu{
+	background-color:#EEE;	
+	height:100%;
+	width:200px;
+	position:fixed;
+	right:0px;
+	z-index:2;
+	display:none;
+}
+	
+#MapsMenu p{
+	font-size:16px;
+	color:#999;
+	margin-top:30px;
+	margin-left:20px;
+	font-style:normal;
+}
+	
+#MapsMenu paper-menu{
+	width:200px;
+	margin-top:60px;
+	height:calc(100% - 200px) !important;
+	font-size:10px;
+	padding:0px;
+	overflow:auto;
+	background-color:#eee;
+}
+
+#MapsMenu paper-menu paper-material{
+	font-size:13px;
+	height:40px;
+	line-height:13px;
+	background-color:#fafafa;
+	color:#666;
+	margin-top:4px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:12px;
+	padding-left:20px;
+	cursor: pointer;
+	width: 170px;
+	border-radius: 1px;
+}
+
+#MapsMenu paper-menu::-webkit-scrollbar{
+	width: 7px;
+	height:7px;
+	background-color: #eee;
+}
+
+#MapsMenu paper-menu::-webkit-scrollbar-thumb{
+	background-color: #666;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	color-stop(.5, rgba(255, 255, 255, .2)),
+	color-stop(.5, transparent), to(transparent));
+}
+
+#MapsMenu paper-input{
+	width:160px;
+	margin:20px;
+	margin-top:0px;
+	height:16px;
+	font-size:10px;
+}
+/* Maps Menu Styles */
